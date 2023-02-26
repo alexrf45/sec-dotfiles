@@ -8,6 +8,13 @@
 	gpgsign = true
 [alias]
 	logs = log --show-signature
+	co = checkout
+	br = branch
+	aa = add
+	ca = commit
+	a = add
+	p = push
+	ca = commit
 [core]
 	editor = nvim
 [gpg]
