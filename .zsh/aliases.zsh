@@ -69,4 +69,4 @@ alias dockup='docker-compose up -d'
 alias dockdown='docker-compose down'
 
 
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
