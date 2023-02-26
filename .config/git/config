@@ -1,0 +1,16 @@
+[user]
+	email = fonalex45@gmail.com
+	name = alexrf45
+	signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIB18/BpGUkpNyeLDqp3DbPdwP7Vas3PReq1WfJ3T157n Sean Fontaine Bug Bounty VM 2023-02-24"
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true
+[alias]
+	logs = log --show-signature
+[core]
+	editor = nvim
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = /home/r0land/.config/git/allowed_signers
