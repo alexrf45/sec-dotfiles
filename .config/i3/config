@@ -196,9 +196,8 @@ gaps outer 4
 
 exec_always --no-startup-id vmware-user
 
-exec_always --no-startup-id feh --no-fehbg --bg-fill '/home/bounty/.config/pictures/kali.png'
+exec_always --no-startup-id feh --no-fehbg --bg-fill '/home/r0land/.config/pictures/kali.png'
 
-exec_always --no-startup-id picom -b --config ~/.config/picom.conf
 
 exec_always --no-startup-id xrandr -s 1920x1080
 

@@ -32,14 +32,13 @@ ssh-add ~/.ssh/bug &> /dev/null
 #history log function
     precmd() { eval 'if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history -f)" >> ~/.logs/zsh-history-$(date "+%Y-%m-%d").log; fi' }
 
-alias clear-history='cp $HOME/.history $HOME/dev-bckup/arch-history/.history_backup && echo "" > $HOME/.r0land_history'
 
 alias hist-backup='cp -r ~/.logs/* ~/dev-bckup/arch-history/'
 
 eval "$(starship init zsh)"
 
 #miniplug zsh
-source "$HOME/.zsh/miniplug.zsh"
+source "$HOME/.zsh/plugins/miniplug.zsh"
 
 # Define a plugin
 miniplug plugin 'zsh-users/zsh-syntax-highlighting'
