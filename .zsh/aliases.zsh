@@ -70,3 +70,9 @@ alias dockdown='docker-compose down'
 
 
 alias secfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+#tools
+alias ciphey='docker run -it --rm remnux/ciphey'
+alias neo4j='docker-compose -f ~/tools/bloodhound-dev/docker-compose.yaml up -d'
+alias neo4j-down='docker-compose -f ~/tools/bloodhound-dev/docker-compose.yaml down'
+alias bloodhound='/usr/local/bin/bloodhound-linux/./BloodHound --no-sandbox &'
