@@ -1,16 +1,18 @@
 
 #arch commands
-alias reload='. ~/.zshrc'
+alias reload='. ~/.zshrc ; echo "ZSH reloaded!!"'
 alias update='sudo pacman -Syyu'
 alias i='sudo pacman -S'
 alias vim='nvim'
 alias tree-overview='tree -D -L 2'
+alias history-backup='cp -r ~/.logs ~/dev-bckup/arch-history/ && rm ~/.logs/*'
 
 #tmux
 alias t='tmux new -f ~/.tmux.conf -s $1'
 
 #networking
 alias public='curl wtfismyip.com/text'
+alias http='sudo python3 -m http.server 80'
 
 #aws-vault
 alias awsv='aws-vault exec Administrator'
@@ -56,12 +58,14 @@ alias aws-nuke='cloud-nuke aws --exclude-resource-type s3 --exclude-resource-typ
 alias aws-nuke-view-us-east-1='cloud-nuke inspect-aws --region us-east-1'
 
 #docker
-alias d='docker'
-alias dimls='docker image ls'
-alias dim='docker image'
-alias dct='docker container'
-alias dps='docker ps'
-alias dnt='docker network'
+alias dock='docker'
+alias dockimls='docker image ls'
+alias dockim='docker image'
+alias prune-containers='docker container prune'
+alias prune-images='docker image prune'
+alias dockc='docker container'
+alias dockps='docker ps'
+alias docknt='docker network'
 
 
 #docker compose
@@ -70,6 +74,16 @@ alias dockdown='docker-compose down'
 
 
 alias secfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+
+#Juiceshop
+alias juiceshop='docker run --name juiceshop -d --rm -p 3000:3000 bkimminich/juice-shop'
+
+#CTF Aliases
+alias endgame='sudo openvpn .config/openvpn/endgame.ovpn'
+alias htb='sudo openvpn .config/openvpn/htb.ovpn'
+alias release='sudo openvpn .config/openvpn/release.ovpn'
+alias echoctf='sudo openvpn .config/openvpn/echoCTF.ovpn'
 
 #tools
 alias ciphey='docker run -it --rm remnux/ciphey'
