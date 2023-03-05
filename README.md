@@ -1,2 +1,2 @@
 # sec-dotfiles
-dotfiles for bug bounty
+dotfiles for security related things
