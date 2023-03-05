@@ -65,6 +65,18 @@ pomodoro () {
   fi
 }
 
+impacket() {
+ dirname=${PWD##*/}
+ docker run -it --rm \
+ --net=host \
+ -v `pwd`:/${dirname} \
+ -e DOMAIN=$DOMAIN \
+ -e IP=$IP \
+ -w /${dirname} \
+ impacket:latest
+}
+
+
 alias wo="pomodoro 'work'"
 alias br="pomodoro 'break'"
 
