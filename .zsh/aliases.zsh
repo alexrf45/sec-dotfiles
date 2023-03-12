@@ -9,7 +9,7 @@ alias history-backup='cp -r ~/.logs ~/dev-bckup/arch-history/ && rm ~/.logs/*'
 
 #tmux
 alias t='tmux new -f ~/.tmux.conf -s $1'
-
+alias t-session='tmuxp load ~/.config/tmuxp/ctf.yaml'
 #networking
 alias public='curl wtfismyip.com/text'
 alias http='sudo python3 -m http.server 80'
@@ -80,10 +80,11 @@ alias secfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias juiceshop='docker run --name juiceshop -d --rm -p 3000:3000 bkimminich/juice-shop'
 
 #CTF Aliases
-alias endgame='sudo openvpn .config/openvpn/endgame.ovpn'
-alias htb='sudo openvpn .config/openvpn/htb.ovpn'
-alias release='sudo openvpn .config/openvpn/release.ovpn'
-alias echoctf='sudo openvpn .config/openvpn/echoCTF.ovpn'
+alias endgame='sudo openvpn ~/.config/openvpn/endgame.ovpn'
+alias htb='sudo openvpn ~/.config/openvpn/htb.ovpn'
+alias htb-season='sudo openvpn ~/.config/openvpn/competitive.ovpn'
+alias release='sudo openvpn ~/.config/openvpn/release.ovpn'
+alias echoctf='sudo openvpn ~/.config/openvpn/echoCTF.ovpn'
 
 #tools
 alias ciphey='docker run -it --rm remnux/ciphey'
