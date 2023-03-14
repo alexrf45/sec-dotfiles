@@ -85,8 +85,9 @@ alias htb='sudo openvpn ~/.config/openvpn/htb.ovpn'
 alias htb-season='sudo openvpn ~/.config/openvpn/competitive.ovpn'
 alias release='sudo openvpn ~/.config/openvpn/release.ovpn'
 alias echoctf='sudo openvpn ~/.config/openvpn/echoCTF.ovpn'
-
+alias fortress='sudo openvpn ~/.config/openvpn/fortress.ovpn'
 #tools
+alias kali-pull='docker pull fonalex45/katet:latest'
 alias ciphey='docker run -it --rm remnux/ciphey'
 alias neo4j='docker-compose -f ~/tools/bloodhound-dev/docker-compose.yaml up -d'
 alias neo4j-down='docker-compose -f ~/tools/bloodhound-dev/docker-compose.yaml down'

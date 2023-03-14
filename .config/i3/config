@@ -196,7 +196,7 @@ gaps outer 4
 
 exec_always --no-startup-id vmware-user
 
-exec_always --no-startup-id feh --no-fehbg --bg-fill '/home/r0land/.config/pictures/kali.png'
+exec_always --no-startup-id feh --no-fehbg --bg-fill '/home/r0land/.config/pictures/kali-aqua.png'
 
 
 exec_always --no-startup-id xrandr -s 1920x1080
